@@ -16,7 +16,8 @@ contract initMakerSuperToken {
     event NewSuperToken(address _contractAddress);
     mapping (address => address) superTokenRegistry;
     
-    ISuperfluid private _host; // Superfluid Goerli host: 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9
+    ISuperfluid private _host; // Goerli host: 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9
+                              //  Mumbai host: 0xEB796bdb90fFA0f28255275e16936D25d3418603
     
     constructor(address _sfHost) {
         
@@ -27,6 +28,7 @@ contract initMakerSuperToken {
     function createMakerSuperToken(ERC20WithTokenInfo mkrToken) public returns (ISuperToken mkrSuperToken) {
         
         // Goerli testMaker address: 0xdfec82f5e4aadfc0f68c9d38ab520df08affadc1
+        // Mumbai testMaker address: 0x445F5cA0325150635F73B7E82DD1373aC0bE2a9d
         // name: Super Fake Maker
         // symbol: xMKR
         
