@@ -3,13 +3,11 @@ pragma solidity ^0.8.0;
 pragma abicoder v2;
 
 import {
-    ISuperAgreement,
-    SuperAppDefinitions,
     ISuperfluid,
     ISuperToken,
     ISuperTokenFactory
 } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperfluid.sol";
-import { ERC20WithTokenInfo, TokenInfo } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/tokens/ERC20WithTokenInfo.sol";
+import { ERC20WithTokenInfo } from "@superfluid-finance/ethereum-contracts/contracts/interfaces/tokens/ERC20WithTokenInfo.sol";
 
 contract initMakerSuperToken {
     
@@ -17,7 +15,7 @@ contract initMakerSuperToken {
     mapping (address => address) superTokenRegistry;
     
     ISuperfluid private _host; // Goerli host: 0x22ff293e14F1EC3A09B137e9e06084AFd63adDF9
-                              //  Mumbai host: 0xEB796bdb90fFA0f28255275e16936D25d3418603
+                               //  Mumbai host: 0xEB796bdb90fFA0f28255275e16936D25d3418603
     
     constructor(address _sfHost) {
         
