@@ -23,7 +23,7 @@ Creating a basic ERC20 token (named "testMaker") and wrapping this token into a 
     
     ![Loading Wrapped Super Token Contract](./img/loadWrappedSuperTokenContract.jpg)
 
-    * Use *upgrade* function to create Super Token
+    * Use *upgrade* function to create Super Token with supply of zero
         * *Note* You can do a gut check by using the *symbol* function and see if it returns "MKRtx"
 
     ![Upgrade Wrapped Super Token Contract to Super Token](./img/upgrade.jpg)
