@@ -28,7 +28,7 @@ contract initMakerSuperToken {
         // Goerli testMaker address: 0xdfec82f5e4aadfc0f68c9d38ab520df08affadc1
         // Mumbai testMaker address: 0x445F5cA0325150635F73B7E82DD1373aC0bE2a9d
         // name: Super Fake Maker
-        // symbol: xMKR
+        // symbol: MKRtx
         
         string memory name = string(abi.encodePacked('Super ', mkrToken.name()));
         string memory symbol = string(abi.encodePacked(mkrToken.symbol(), 'x'));
