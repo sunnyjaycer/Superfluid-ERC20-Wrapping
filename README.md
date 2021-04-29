@@ -1,5 +1,5 @@
 # Superfluid-ERC20-Wrapping
-Creating a basic ERC20 token (named "testMaker") and wrapping this token into a streamable Superfluid Super Token
+Creating a basic ERC20 token (named "testMaker") and making a wrapped version of it as a streamable Superfluid Super Token
 
 ### Implementation
 
