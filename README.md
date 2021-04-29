@@ -13,6 +13,7 @@ Creating a basic ERC20 token (named "testMaker") and wrapping this token into a 
     * **OR** skip to next step using testMaker token at 0xE9e2fCfC0A491C7dB9ABc20A12d18460C09c6816
 
 3. Deploy Wrapped Super Token Contract
+    * Deploy init contract
     * Run *createMakerSuperToken* function with address of testMaker token contract as argument
     * Run *getSuperToken* function with address of testMaker token contract as argument
         * This will provide the address of the Wrapped Super Token Contract on Mumbai testnet
