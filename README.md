@@ -1,22 +1,18 @@
 # Superfluid-ERC20-Wrapping
-Creating a basic ERC20 token (named "testMaker") and making a wrapped version of it as a streamable Superfluid Super Token
+Creating a custom ERC20 token (named "testMaker") and making a wrapped version of it as a streamable Superfluid Super Token. These steps can be appropriated for any ERC20 token!
 
 ### Implementation
 
-1. Switch to Mumbai Testnet
-    - Network Name: Mumbai Testnet
-    - New RPC URL : https://rpc-mumbai.matic.today
-    - Chain ID    : 80001
+1. Switch to a testnet
 
 2. Deploy testMaker token (or use pre-deployed)
     * Deploy testMaker contract in testMaker.sol, set initial supply
-    * **OR** skip to next step using testMaker token at 0xE9e2fCfC0A491C7dB9ABc20A12d18460C09c6816
 
 3. Deploy Wrapped Super Token Contract
     * Deploy initMakerSuperToken contract in init.sol
     * Run *createMakerSuperToken* function with address of testMaker token contract as argument
     * Run *getSuperToken* function with address of testMaker token contract as argument
-        * This will provide the address of the Wrapped Super Token Contract on Mumbai testnet
+        * This will provide the address of the Wrapped Super Token Contract on the testnet. Copy it!
 
 4. Create Super Token
     * Load contract at address recieved from *getSuperToken* function with ISuperToken ABI - @superfluid-finance/ethereum-contracts/contracts/interfaces/superfluid/ISuperToken.sol *(see Remix example below)*
